@@ -1,0 +1,13 @@
+section,variant,run_name,vocab_size,context_len,n_layers,n_heads,embed_dim,max_iters,params,best_iter,train_loss_at_best,best_val_loss,last_val_loss,chars_per_token,val_loss_per_char,minutes,model,setting,accuracy,f1,params_m,ms_per_sentence
+mini-GPT,v1,v1_base_L4_ctx64_vocab16000,16000.0,64.0,4.0,4.0,128.0,8000.0,4912000.0,7999.0,5.1218,5.2276,5.2276,3.604,1.4504,6.0,,,,,,
+mini-GPT,v2,v2_deeper_L6_ctx64_vocab16000,16000.0,64.0,6.0,4.0,128.0,8000.0,5307776.0,7999.0,5.0334,5.1454,5.1454,3.604,1.4276,7.1,,,,,,
+mini-GPT,v3,v3_longctx_L4_ctx128_vocab16000,16000.0,128.0,4.0,4.0,128.0,8000.0,4920192.0,7750.0,4.9859,5.0883,5.0901,3.604,1.4117,12.3,,,,,,
+mini-GPT,v4,v4_vocab8000_L4_ctx64,8000.0,64.0,4.0,4.0,128.0,8000.0,2856000.0,7999.0,4.7301,4.8074,4.8074,3.193,1.5056,4.0,,,,,,
+5-sentiment,,,,,,,,,,,,,,,,,tabularisai/multilingual-sentiment-analysis,"S0: top-1, нейтральне = помилка",0.95,0.947,135.0,6.0
+5-sentiment,,,,,,,,,,,,,,,,,tabularisai/multilingual-sentiment-analysis,S1: бінарно (pos vs neg),0.95,0.947,135.0,6.0
+5-sentiment,,,,,,,,,,,,,,,,,tabularisai/multilingual-sentiment-analysis,"S2: бінарно, поріг 0.35",1.0,1.0,135.0,6.0
+5-sentiment,,,,,,,,,,,,,,,,,tabularisai/multilingual-sentiment-analysis,"S3: бінарно, поріг 0.65",0.95,0.947,135.0,6.0
+5-sentiment,,,,,,,,,,,,,,,,,cardiffnlp/twitter-xlm-roberta-base-sentiment,"S0: top-1, нейтральне = помилка",1.0,1.0,278.0,13.0
+5-sentiment,,,,,,,,,,,,,,,,,cardiffnlp/twitter-xlm-roberta-base-sentiment,S1: бінарно (pos vs neg),1.0,1.0,278.0,13.0
+5-sentiment,,,,,,,,,,,,,,,,,cardiffnlp/twitter-xlm-roberta-base-sentiment,"S2: бінарно, поріг 0.35",1.0,1.0,278.0,13.0
+5-sentiment,,,,,,,,,,,,,,,,,cardiffnlp/twitter-xlm-roberta-base-sentiment,"S3: бінарно, поріг 0.65",1.0,1.0,278.0,13.0
